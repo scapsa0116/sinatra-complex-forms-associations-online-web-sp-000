@@ -10,7 +10,7 @@
  
  
   <h3>Existing Pets</h3>
-  <% @pets.all.each do |pet| %>
+  <% @pets.each do |pet| %>
     <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id %>" value="<%= pet.id %>"><%= pet.name %></input><br>
   <% end %>
   <br>
